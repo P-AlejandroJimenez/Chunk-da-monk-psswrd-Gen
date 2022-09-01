@@ -21,13 +21,35 @@ var generatePassword = function() {
   if (userChoice === true) {
     window.alert("Numbers included in password!")
 
-  } else if (userChoice === False) {
+  } else if (userChoice === false) {
     window.alert("Numbers have been excluded from password!")
   }
 
   var userChoice = window.confirm ("Include special characters?");
+
+  if (userChoice === true) {
+    window.alert("Special characters included in password!")
+
+  } else if (userChoice === false) {
+    window.alert("Special characters have been excluded from password!")
+  }
+
   var userChoice = window.confirm ("Include uppercase characters?");
+  if (userChoice === true) {
+    window.alert("Uppercase characters included in password!")
+
+  } else if (userChoice === false) {
+    window.alert("Uppercase characters have been excluded from password!")
+  }
   var userChoice = window.confirm ("Include lowercase characters?");
+
+  if (userChoice === true) {
+    window.alert("Lowercase characters included in password!")
+
+  } else if (userChoice === false) {
+    window.alert("Lowercase characters have been excluded from password!")
+  }
+
 };
 
 // Write password to the #password input
